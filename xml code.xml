@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BusTicketBookingSuite" parallel="false">
+    <test name="RegressionTest">
+        <parameter name="url" value="https://example.com/dev" />
+        <parameter name="browser" value="chrome" />
+        <classes>
+            <class name="com.example.tests.SearchBusTest" />
+            <class name="com.example.tests.BookTicketTest" />
+        </classes>
+    </test>
+    <!-- Additional tests for different environments -->
+</suite>
